@@ -82,19 +82,20 @@ export default function SimpleTabs() {
     <div className={classes.root}>
       <AppBar position="fixed">
           <Toolbar>
+            <Typography>Futo Social Forum</Typography>
           
             <Tabs indicatorColor='white' value={value} onChange={handleChange} aria-label="simple tabs example">
-                <Tab  icon={<HomeIcon />} {...a11yProps(0)} />
+                {/*<Tab  icon={<HomeIcon />} {...a11yProps(0)} /> */}  
                 <Tab  icon={<ChatBubbleIcon />}  {...a11yProps(1)} />
             </Tabs>
             
           </Toolbar>
         
       </AppBar>
-      <TabPanel className={classes.status} value={value} index={0}>
+     {/* <TabPanel className={classes.status} value={value} index={0}>
           <Status />
-      </TabPanel>
-      <TabPanel value={value} className={classes.chats} index={1}>
+     </TabPanel>*/}
+      <TabPanel value={value} className={classes.chats} index={0}>
           <Chat /> 
         
       </TabPanel>

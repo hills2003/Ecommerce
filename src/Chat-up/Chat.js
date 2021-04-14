@@ -48,6 +48,7 @@ function Chat(props) {
         setValue('');
     }
     useEffect((e)=>{
+        divref.current.scrollIntoView(true);
         database.ref('chats').on('value',(snapshot)=>{
             let arr =[];
             snapshot.forEach((snap)=>{

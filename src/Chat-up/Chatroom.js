@@ -2,6 +2,7 @@ import React from 'react';
 import {makeStyles} from "@material-ui/core";
 import { ChatSharp } from '@material-ui/icons';
 import { useAuth } from "../Config/AuthProvider";
+//import Tippy  from  "@tippyjs/react";
 const useStyles = makeStyles({
     para1:{
         background:'blue',
@@ -30,9 +31,11 @@ function Chatroom({chat}) {
     const classes = useStyles();
     const { currentUser } =useAuth();
     return (
+        
         <div className={chat.name  == currentUser.email ? classes.right : classes.left}>
             <h5 className={chat.name  == currentUser.email  ? classes.para2 : classes.para1 }>{chat.text} </h5>
         </div>
+        
     );
 }
 

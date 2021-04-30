@@ -4,7 +4,7 @@ import one from "./images/one.jpg";
 import two from "./images/two.jpg";
 import three from "./images/three.jpg";
 import four from "./images/four.jpg";
-import {Grid, GridList,GridListTile} from "@material-ui/core";
+import {Grid} from "@material-ui/core";
 function Hello(props) {
     const list =[
         {

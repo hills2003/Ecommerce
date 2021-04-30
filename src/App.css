@@ -78,8 +78,7 @@ li{
 }
 .container{
     position:relative;
-    display:flex;
-    flex-direction:column;
+    text-align: center\;
 
 }
 .hire{
@@ -144,6 +143,7 @@ p,h5{
     }
     .container{
         margin-top:50px;
+        text-align: center;
     }
     .section .h3{
         font-weight:bold;

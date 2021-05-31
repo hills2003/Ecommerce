@@ -2,6 +2,7 @@
   "name": "victorapp",
   "version": "0.1.0",
   "private": true, 
+  "homepage":"https://hills2003.gihub.io/Ecommerce",
   "dependencies": {
     "@material-ui/core": "^4.11.0",
     "@material-ui/icons": "^4.9.1",
